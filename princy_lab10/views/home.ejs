@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Princy's LAB 10</title>
+    <style>
+    #body{
+        background-color: white;
+        margin-top: 100px; 
+        border-style: double;
+        border-color:  purple;  
+        width: 800px;   
+        height: 700px;
+    }
+    h1{
+        color: purple;
+        text-align: center;
+
+    }
+    #box{
+        width:600px;
+        background-color: pink ;
+        font-size: 15px;
+        padding: auto;
+        height: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Click on any Book to see the details</h1>
+    <div id="box">
+      <p id="book"><a href="http://localhost:3000/books/1" target="_blank"><%=books[0].book %></a></p>
+      <p id="book"><a href="http://localhost:3000/books/2" target="_blank"><%=books[1].book %></a></p>
+      <p id="book"><a href="http://localhost:3000/books/3" target="_blank"><%=books[2].book %></a></p>
+      
+  </body>
+</html>
